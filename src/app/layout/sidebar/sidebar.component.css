@@ -1,0 +1,32 @@
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: #111;
+  color: white;
+  position: fixed;
+  padding-top: 20px;
+  transition: 0.3s;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 20px;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  cursor: pointer;
+}

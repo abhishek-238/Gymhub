@@ -1,0 +1,27 @@
+.owners-container {
+  padding: 40px;
+}
+
+.owners-title {
+  color: rgb(245, 8, 8);
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.owners-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(0,0,0,0.7);
+}
+
+.owners-table th,
+.owners-table td {
+  padding: 12px;
+  text-align: left;
+  color: white;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.owners-table th {
+  background: #ff5722;
+}

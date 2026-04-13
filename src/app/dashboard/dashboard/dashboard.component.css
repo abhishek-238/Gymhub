@@ -1,0 +1,24 @@
+.dashboard-container {
+  display: flex;
+}
+
+.content {
+  margin-left: 220px;
+  width: 100%;
+  min-height: 100vh;
+
+  /* background-image: url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48"); */
+  background-size: cover;
+  background-position: center;
+
+  animation: zoomBg 25s infinite alternate;
+}
+
+@keyframes zoomBg {
+  from { background-size: 100%; }
+  to { background-size: 110%; }
+}
+
+.page {
+  padding: 40px;
+}

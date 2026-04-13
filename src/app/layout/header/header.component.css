@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  height: 67px;
+
+  padding: 0px 8px;
+
+  background: rgba(0,0,0,0.6);
+  color: white;
+}
+
+.header button {
+  padding: 8px 8px;
+  border: none;
+  background: red;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: end;
+}

@@ -1,0 +1,30 @@
+<div class="login-container">
+  <div class="login-card">
+    <h2>Welcome Back</h2>
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="">Email</label>
+      <input type="email" name="" id="" placeholder="Email" formControlName="email">
+      <div class="error-message" *ngIf="loginForm.controls.email.touched && loginForm.controls.email.invalid">Email is
+        required</div>
+      </div>
+      
+      <div class="form-group">
+        <label for="">Password</label>
+      <input type="password" name="" id="" placeholder="Password" formControlName="password">
+      <div class="error-message"
+        *ngIf="loginForm.controls.password.touched && loginForm.controls.password.errors?.['required']">Password is
+        required</div>
+      <div class="error-message" *ngIf="loginForm.controls.password.errors?.['minlength']">Password must be at least 6
+        Charcters</div>
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+    <p>
+      Don't have an account ? 
+      <a routerLink="/signup">SignUp</a>
+    </p>
+  </div>
+</div>

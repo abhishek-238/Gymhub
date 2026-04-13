@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "demo": {
+    "Gymhub": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/demo",
+            "outputPath": "dist/Gymhub",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "demo:build:production"
+              "buildTarget": "Gymhub:build:production"
             },
             "development": {
-              "buildTarget": "demo:build:development"
+              "buildTarget": "Gymhub:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -92,5 +92,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "b249b071-836a-419f-ad90-c5020f656937"
   }
 }
